@@ -6,7 +6,7 @@ function Blogs() {
   const [blogs, setBlogs] = useState();
   const sendRequest = async () => {
     const res = await axios
-      .get("http://localhost:8000/api/blog")
+      .get("https://blog-app-m0fr.onrender.com/api/blog")
       .catch((err) => console.log(err));
 
     const data = await res.data;
@@ -15,7 +15,7 @@ function Blogs() {
   useEffect(() => {
     sendRequest().then((data) => setBlogs(data.blogs));
   }, []);
- 
+
   return (
     <div>
       {blogs &&

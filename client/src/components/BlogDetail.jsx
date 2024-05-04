@@ -20,7 +20,7 @@ function BlogDetail() {
 
   const fetchDetails = async () => {
     const res = await axios
-      .get(`https://blog-app-server-busynnylh-mayan001s-projects.vercel.app/api/blog/${id}`)
+      .get(`https://blog-app-server-five.vercel.app/api/blog/${id}`)
       .catch((err) => console.log(err));
 
     const data = res.data;
@@ -47,7 +47,7 @@ function BlogDetail() {
 
   const sendRequest = async () => {
     const res = await axios
-      .put(`https://blog-app-server-busynnylh-mayan001s-projects.vercel.app/api/blog/update/${id}`, {
+      .put(`https://blog-app-server-five.vercel.app/api/blog/update/${id}`, {
         title: inputs.title,
         content: inputs.content,
         image: inputs.image,

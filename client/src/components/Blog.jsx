@@ -24,7 +24,7 @@ const Blog = ({ title, content, image, userName, isUser, id }) => {
 
   const deleteRequest = async () => {
     const res = await axios
-      .delete(`https://blog-app-server-busynnylh-mayan001s-projects.vercel.app/api/blog/${id}`)
+      .delete(`https://blog-app-server-five.vercel.app/api/blog/${id}`)
       .then(result => {
         console.log(result)
         window.location.reload()

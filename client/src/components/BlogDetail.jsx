@@ -20,7 +20,7 @@ function BlogDetail() {
 
   const fetchDetails = async () => {
     const res = await axios
-      .get(`https://blog-app-server-five.vercel.app/api/blog/${id}`)
+      .get(`https://blog-app-server-seven.vercel.app/api/blog/${id}`)
       .catch((err) => console.log(err));
 
     const data = res.data;

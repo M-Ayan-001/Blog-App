@@ -6,7 +6,7 @@ function Blogs() {
   const [blogs, setBlogs] = useState();
   const sendRequest = async () => {
     const res = await axios
-      .get("https://blog-app-m0fr.onrender.com/api/blog")
+      .get("https://blog-app-server-busynnylh-mayan001s-projects.vercel.app/api/blog")
       .catch((err) => console.log(err));
 
     const data = await res.data;

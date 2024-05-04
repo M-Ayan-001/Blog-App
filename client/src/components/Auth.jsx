@@ -25,7 +25,7 @@ const Auth = () => {
 
   const sendRequest = async (type = "signin") => {
     const res = await axios
-      .post(`https://blog-app-m0fr.onrender.com/api/user/${type}`, {
+      .post(`https://blog-app-server-busynnylh-mayan001s-projects.vercel.app/api/user/${type}`, {
         name: inputs.name,
         email: inputs.email,
         password: inputs.password,

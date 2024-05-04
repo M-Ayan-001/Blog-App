@@ -29,4 +29,7 @@ mongoose
     .catch((err) => console.log(err));
 
 
-app.use(cors({ origin: 'https://blog-app-client-ruby.vercel.app/', credentials: true }))
+app.use(function (req, res) {
+    res.header("Access-Control-Allow-Origin", "https://blog-app-client-ruby.vercel.app");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+});

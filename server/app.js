@@ -23,3 +23,6 @@ mongoose
         console.log(`Connected To Database and listening at PORT ${PORT}`)
     )
     .catch((err) => console.log(err));
+
+
+app.use(cors({ origin: 'https://blog-app-client-rose.vercel.app/', credentials: true }))
